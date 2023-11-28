@@ -9,9 +9,9 @@ public class Cinema {
     private int columns;
     private List<Seat> seats = new ArrayList<>();
 
-    public Cinema(int r, int c) {
-        rows = r;
-        columns = c;
+    public Cinema(int rows, int columns) {
+        this.rows = rows;
+        this.columns = columns;
         for (int row = 1; row <= rows; row++) {
             for (int column = 1; column <= columns; column++) {
                 seats.add(new Seat(row, column));
